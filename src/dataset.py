@@ -32,6 +32,6 @@ class FungiDataset(Dataset):
     def __getitem__(self, idx):
         image = self.images[idx]
         label = torch.tensor(self.labels[idx])
-        # file = torch.tensor(self.files[idx])
-        sample = {'image': image, 'label': label}
+        file = self.files[idx]
+        sample = {'image': image, 'label': label, 'file': file}
         return sample
