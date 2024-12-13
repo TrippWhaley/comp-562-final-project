@@ -164,4 +164,6 @@ cython_debug/
 
 # User added:
 data/
+hyperparam_cnn_tuning/
 poetry.lock
+*.keras
